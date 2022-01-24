@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <link href="https://fonts.googleapis.com/css?family=Josefin serif" rel="stylesheet" type="text/css">
+  <body>
+
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Employee Engagement Survey</p>
+    <div class="container">
+      <form id="survey-form">
+        <div id="head">
+        <label for="first" id="name-label">First Name</label>
+        <input type="text" placeholder="First Name" id="name" required name="first">
+        <label for="Last" id="Last-name-label">Last Name</label>
+        <input type="text" id="Last" required placeholder="Last Name">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Email">
+        <label for="age" id="number-label">Age</label>
+        <input type="Number" min="18" max="60" id="number" placeholder="age">
+        
+       <label for="work-area" id="work-label">Work Area</label>
+
+<select name="work-area" id="dropdown" required>
+  <option value="" disabled selected>--Select one --</option>
+  <option value="Marketing">Marketing</option>
+  <option value="Accounting">Accounting</option>
+  <option value="Administration">Administration</option>
+  <option value="Production">Production</option> <option value="IT">IT</option>
+<option value="Maintanance">Maintanance</option>
+</select>
+        <div id="gender">
+<p id="gender-label">Gender</p>
+        <div>
+        <input type="radio" id="male" value="male" name="gender"><label for="male">Male</label>
+        </div>
+        <div>
+         <input type="radio" id="female" value="female" name="gender"><label for="female">Female</label>
+        </div>
+        <div>
+         <input type="radio" id="other" value="other" name="gender"><label for="other">Other
+          </label>
+          </div>
+        </div>
+          </div>
+        <br>
+        <br>
+        <fieldset>
+    <legend>Answer the Following Question</legend>
+          <ol>
+          <li>Are you proud to work for [Company]?</li>
+    <input id="one" type="checkbox" name="items" value="one">
+    <label for="one">Agree</label><br>
+    <input id="two" type="checkbox" name="items" value="two">
+    <label for="two">Parcial Agree</label><br>
+    <input id="three" type="checkbox" name="items" value="three">
+    <label for="three">Not Agreed</label>
+            <br>
+            <br>
+             <li>Would you recommend [Company] as a great place to work?</li>
+         <input id="one" type="checkbox" name="items" value="one">
+    <label for="one">yes</label><br>
+    <input id="two" type="checkbox" name="items" value="two">
+    <label for="two">No</label><br> 
+            <br>
+            <li>do you see yourself still working at [company] in two years time?</li>
+         <input id="one" type="checkbox" name="items" value="one">
+    <label for="one">yes</label><br>
+    <input id="two" type="checkbox" name="items" value="two">
+    <label for="two">No</label><br>   
+            <input id="Probable" type="checkbox" name="items" value="Probable">
+    <label for="two">Probable</label><br>   
+          </ol>
+          </fieldset>
+        <br>
+          <label for="comments" id="comments-label">Comments</label>
+          <textarea id="comments" placeholder="Write Something..." name="comments"></textarea>
+<br>
+        <div id="sub">
+        <input type="submit" id="submit" value="Submit">
+        </div>
+      </form>
+      
+      <br>
+       <br>
+    </div>
+  
+  </body>
+</main>
+<!-- partial -->
+  
+</body>
+</html>

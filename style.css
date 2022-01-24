@@ -1,0 +1,111 @@
+body{
+background: rgba(0, 0, 0, 0.7) url("https://images.unsplash.com/3/doctype-hi-res.jpg?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MTUwMjQ1OA&ixlib=rb-1.2.1&q=85");
+  background-blend-mode: darken;
+  background-size: cover;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  height:auto;
+  
+}
+
+#title{
+  text-align: center;
+  color: white;
+  font-family:Josefin serif;
+  font-size: 55px;
+}
+#description{
+ font-family:Josefin serif; 
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.container{
+  
+  /*background-color:hsl(55, 11%, 46%);*/
+  color: white;
+  margin:auto;
+  width:110%;
+  height:auto;
+  display:flex;
+  justify-content:center;
+  background: rgba(113, 122, 106, 0.8);
+ 
+  
+
+}
+#head{
+  padding-top:15px;
+  height:auto;
+ 
+}
+#name-label, #Last-name-label, #email-label, #number-label, #work-label, #gender-label,#comments-label, li, legend{
+  font-family:consolas;
+  font-weight: bold;
+  font-size:18px;
+  display:block;
+  padding:5px 0px 5px 0px;
+
+}
+select, #name, #Last, #email, #number {
+    position:relative;
+  display:inline-block;
+  width:100%;
+  height:32px;
+  margin:auto;
+}
+#sub{
+  
+  display:flex;
+  justify-content:center;
+  padding:7px 0px 10px 0px;
+  
+}
+#submit{
+  font-family:sans-serif;
+  font-weight:bold;
+  font-size:16px;
+  width:200px;
+  height:40px;
+  color:white;
+  background-color:#4a9b17;
+}
+
+#comments{
+  position:relative;
+  display:inline-block;
+  width:80%;
+  height:90px;
+  
+}
+#comments-label::after{
+  content:" (optional)";
+    font-size:12px;
+}
+#title::after{
+  content:" ";
+  display:block;
+  font-size:10px;
+  color:red;
+  width:43%;
+  height:10px;
+  background:green;
+  margin:auto;
+}
+#name-label::after, #Last-name-label::after, #email-label::after, #work-label::after{
+  font-size:15px;
+  content:"*";
+}
+input:hover ,select:hover{
+ transform:scale(1.03);
+}
+input:focus{
+  background: #dce8fc;
+}
+@media only screen and (max-width:850px) {
+  #head, .container {
+    width:70%;
+    margin:auto;
+  }
+}
